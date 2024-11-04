@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            color: #333;
+        }
+
+        .welcome-box {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #4A90E2;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #357ABD;
+        }
+
+        /* Improved Form Styling */
+        .form {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .form label {
+            font-size: 1em;
+            color: #4A90E2;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .form input[type="text"]:focus {
+            border-color: #4A90E2;
+            outline: none;
+            box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+        }
+
+        .form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form button:hover {
+            background-color: #357ABD;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h2>Enter Your Scores</h2>
+        <form action="/submit" method="post">
+            <label for="science">Science</label>
+            <input type="text" id="science" name="science" placeholder="Enter science score">
+
+            <label for="maths">Maths</label>
+            <input type="text" id="maths" name="maths" placeholder="Enter maths score">
+
+            <button type="submit">Submit Scores</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="welcome-box">
+            <h1>Welcome to Our Website!</h1>
+            <p>We're glad to have you here. Discover more and get inspired.</p>
+            <button onclick="window.location.href='#explore'">Check result</button>
+        </div>
+    </div>
+</body>
+</html>
