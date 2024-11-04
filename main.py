@@ -1,5 +1,5 @@
 ## integrate HTML with Flask 
-## HTTP verb like GEET & POST
+## HTTP verb like GET & POST
 
 import flask 
 from flask import Flask,url_for, redirect, render_template, request
